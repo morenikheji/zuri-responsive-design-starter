@@ -100,7 +100,7 @@ div.background {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 40px;
     width: 550px;
-    height: 220px;
+    height: 250px;
     position: relative;
 }
 
@@ -113,6 +113,7 @@ div.background h4 {
 }
 
 div.background p {
+    width: 85%;
     color: #A6A5AA;
     padding-left: 2rem;
     font-size: 0.8rem;
@@ -160,7 +161,8 @@ div.snapshot-box {
 
 div.snapshot-box-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 div.box1 {
@@ -345,3 +347,58 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+.hamburger{
+    border: 0;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+.close{
+    display: none;
+}
+
+@media screen and (max-width:740px) {
+    .nav-ul.show{
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+    }
+    .close{
+        display: none;
+    }
+    .close2{
+        border: 0;
+        height: 30px;
+        width: 50px;
+        cursor: pointer;
+        position: relative;
+        right: 10px;
+    }
+    div.background{
+        min-width: 465px;
+        height: 300px;
+        padding: 25px 25px 0;
+    }
+}
+@media screen and (max-width: 630px) {
+    div.background{
+        min-width: 350px;
+        height: 350px;
+        padding: 25px;
+    }
+    div.hero-content-heading{
+        width: fit-content;
+    }
+    div.hero-section{
+        padding: 10rem 4rem;
+        width: fit-content;
+    }
+    div.hero-content-heading p {
+        margin: 30px 0;
+        min-width: fit-content;
+        width: 300px;
+        max-width: 300px;
+    }
+
+} 
